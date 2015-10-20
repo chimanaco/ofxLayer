@@ -8,11 +8,11 @@ OFX_LAYER_BEGIN_NAMESPACE
 template<typename T>
 struct Type2Int
 {
-	static unsigned int value()
-	{
-		static size_t m = 0;
-		return (unsigned int)&m;
-	}
+    static unsigned long value()
+    {
+        static size_t m = 0;
+        return (unsigned long)&m;
+    }
 };
 
 OFX_LAYER_END_NAMESPACE
